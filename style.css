@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  width: 100%;
+}
+header img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  width: 16rem;
+}
+.header-info {
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header-info h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header-info p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.header-icon strong {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.header-icon i {
+  color: #FF5574;
+}
+.header-icon a {
+  background-color: #FF5574;
+  color: #FFF;
+  font-size: 0.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.header-icon a:hover {
+  background-color: #6168FF;
+}
+#animar {
+  -webkit-animation: vibrate 0.62s cubic-bezier(.36, .07, .19, .97) infinite;
+  animation: vibrate 0.62s cubic-bezier(.36, .07, .19, .97) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+@keyframes vibrate {
+  0.50%, 90% {
+   -webkit-transform: translate3d(-0.5px, 0, 0);
+   transform: translate3d(-0.5px, 0, 0);
+ }
+
+0.50%, 80% {
+  -webkit-transform: translate3d(0.5px, 0, 0);
+  transform: translate3d(0.5px, 0, 0);
+}
+
+30%, 50%, 70% {
+  -webkit-transform: translate3d(-0.5px, 0, 0);
+  transform: translate3d(-0.5px, 0, 0);
+}
+0.50%, 60% {
+  -webkit-transform: translate3d(0.5px, 0, 0);
+  transform: translate3d(0.5px, 0, 0);
+}
+}
